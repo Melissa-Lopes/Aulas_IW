@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2 - DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(221, 132, 146);
+            color: rgb(195, 214, 231);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja aqui...
+    </div>
+
+    <script>
+        var area = document.getElementById('area')
+        function clicar(){
+            areainnerHTML = 'OLÁ!!'
+            area.style.background = 'red'
+        }
+        function entrar(){
+            area.innerHTML = 'ENTROU!'
+        }
+        function sair (){
+            area.innerHTML = 'SAIU!'
+            area.style.background = 'black'
+        }
+    </script>
+</body>
+</html>
