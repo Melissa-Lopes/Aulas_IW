@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- General -->
+    <title>Ex. 3 - Repetição</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+
+    <!-- Scripts -->
+    <script>
+        let habitantesA = Number(prompt('Habitantes do país A'));
+        let porcentagemA = Number(prompt('Porcentagem de crescimento do país A'));
+
+        let habitantesB = Number(prompt('Habitantes do país B'));
+        let porcentagemB = Number(prompt('Porcentagem de crescimento do país B'));
+
+        let anos = 0;
+
+        while (habitantesA < habitantesB){
+            habitantesA += (habitantesA / 100) * porcentagemA;
+            habitantesB += (habitantesB / 100) * porcentagemB;
+            anos++
+        }
+        document.write(`Terão se passado ${anos} para que a população A se iguale ou ultrapasse a população B.`)
+
+    </script>
+</body>
+</html>
