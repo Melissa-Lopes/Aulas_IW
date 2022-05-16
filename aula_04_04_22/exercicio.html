@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio - Somando 2 Números</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#resultado{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="n1" id="n1"> +
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="resultado">Resultado</div>
+    <script>
+        function somar() {
+            var n1 = document.getElementById('n1')
+            var n2 = document.getElementById('n2')
+            var res = document.getElementById('resultado')
+            var num1 = Number(n1.value)
+            var num2 = Number(n2.value)
+            var soma = num1 + num2
+            
+            res.innerHTML = `A soma de ${num1} + ${num2} é <strong>${soma}</strong>`
+        }
+    </script>
+</body>
+
+</html>
