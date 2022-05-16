@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- General -->
+    <title>Ex. 1 - Repetição</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <form>
+        <input type="number" step="1" placeholder="Número de 0 a 10" autofocus>
+        <button>Enviar</button>
+    </form>
+
+    <p>-</p>
+
+    <!-- Scripts -->
+    <script>
+        const form = document.querySelector('form'),
+              input = document.querySelector('input'),
+              output = document.querySelector('p')
+        ;
+
+        form.onsubmit = e => {
+            e.preventDefault();
+
+            let value = Number(input.value);
+
+            if(value >= 0 && value <= 10){
+                output.textContent = `Boa, filhote (${value})`
+            } else {
+                output.textContent = `Faz direito, filho.`
+            }
+        }
+    </script>
+</body>
+</html>
