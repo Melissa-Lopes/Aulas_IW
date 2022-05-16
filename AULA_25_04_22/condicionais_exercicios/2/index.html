@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- General -->
+    <title>Ex. 2 - Condicionais</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Calculadora de aumento</h1>
+    
+    <!-- Formulário -->
+    <form class="f2">
+        <input type="number" step="0.1" placeholder="Salário atual" autofocus>
+        <button><i class="fa-solid fa-dollar-sign"></i> Calcular</button>
+    </form>
+
+    <!-- Tabela de Valores -->
+    <table class="t2">
+        <tr>
+            <th>Salário atual</th>
+            <th>Percentual aplicado</th>
+            <th>Valor do aumento</th>
+            <th>Novo salário</th>
+        </tr>
+        <tr>
+            <td>R$ <span id="salario_antigo">-</span></td>
+            <td><span id="percentual">-</span>%</td>
+            <td>R$ <span id="valor_aumento">-</span></td>
+            <td>R$ <span id="salario_novo">-</span></td>
+        </tr>
+    </table>
+
+    <!-- Links -->
+    <div class="links">
+        <a href="../ex1/index.html">Voltar</a>
+        <a href="../ex3/index.html">Próximo exercício</a>
+    </div>
+
+    <!-- Script -->
+    <script src="./app.js"></script>
+</body>
+</html>
